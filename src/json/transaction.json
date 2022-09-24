@@ -1,0 +1,34 @@
+{
+    "listOrder": [
+        {
+            "id": 123,
+            "name": "RWANDA Beans",
+            "price": 299900,
+            "image": "../image/imgProduct (1).png",
+            "qty": 6,
+            "date": "Saturday, 5 March 2020",
+            "status": "waiting response",
+            "QR": "../image/QRCode.png"
+        },
+        {
+            "id": 124,
+            "name": "ETHIOPIA Beans",
+            "price": 240900,
+            "image": "../image/imgProduct (2).png",
+            "qty": 3,
+            "date": "Saturday, 5 March 2020",
+            "status": "success",
+            "QR": "../image/QRCode.png"
+        },
+        {
+            "id": 125,
+            "name": "GUETEMALA Beans",
+            "price": 240900,
+            "image": "../image/imgProduct (3).png",
+            "qty": 2,
+            "date": "Saturday, 5 March 2020",
+            "status": "cancel",
+            "QR": "../image/QRCode.png"
+        }
+    ]
+}
