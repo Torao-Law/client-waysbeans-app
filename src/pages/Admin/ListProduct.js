@@ -108,10 +108,7 @@ function ListProduct() {
                   <th scope="row d-flex text-align-center">1</th>
                   <td className="m-0">
                     <img
-                      src={`http://localhost:5000/${item.image.replace(
-                        /\\/g,
-                        "/"
-                      )}`}
+                      src={$item.image}
                       alt="imgproduct"
                       style={{ width: 80 }}
                     />

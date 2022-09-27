@@ -44,7 +44,7 @@ function Card() {
             }}
           >
             <img
-              src={`http://localhost:5000/${item.image.replace(/\\/g, "/")}`}
+              src={item.image}
               className="card-img-top"
               alt="card"
             />

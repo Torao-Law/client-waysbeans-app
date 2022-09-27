@@ -9,13 +9,12 @@ function InfoOrder() {
   return (
     <>
       <Header />;
-      <div className="container" style={{ marginTop: 77 }}>
+      <div className="container" style={{ marginTop: 20}}>
         <div
           className="d-flex justify-content-between"
           style={{ padding: "0 80px" }}
         >
           <Profile />
-          <Transaction />
         </div>
       </div>
     </>

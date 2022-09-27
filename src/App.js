@@ -14,12 +14,13 @@ import { API, setAuthToken } from "./config/api";
 import Home from "./pages/Home";
 import LandingPage from "./pages/LandingPage";
 import DetailProduct from "./pages/DetailProduct";
-import InfoOrder from "./pages/InfoOrder";
 import Checkout from "./pages/Checkout";
 import AddProduct from "./pages/Admin/AddProduct";
 import UpdateProduct from "./pages/Admin/UpdateProduct";
 import ListProduct from "./pages/Admin/ListProduct";
 import Dashboard from "./pages/Admin/Dashboard";
+import Profile from "./pages/Profile";
+import History from "./pages/HistoryTransaction";
 
 // init token on axios every time the app is refreshed
 if (localStorage.token) {
@@ -87,7 +88,8 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/home" element={<Home />} />
       <Route path="/detailProduct/:id" element={<DetailProduct />} />
-      <Route path="/infoOrder" element={<InfoOrder />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/history" element={<History />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/admin/addProduct" element={<AddProduct />} />
       <Route path="/admin/updateProduct/:id" element={<UpdateProduct />} />

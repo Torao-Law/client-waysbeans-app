@@ -86,10 +86,7 @@ function DetailProduct() {
         <div className="left-content">
           <div className="img-wrapper" style={{ width: 436, height: 555 }}>
             <img
-              src={`http://localhost:5000/${product?.image.replace(
-                /\\/g,
-                "/"
-              )}`}
+              src={product?.image}
               alt="imgproduct"
               style={{ width: "100%" }}
             />

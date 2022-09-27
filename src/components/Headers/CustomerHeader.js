@@ -14,6 +14,7 @@ import icUser from "../../assets/image/ic-user.png";
 import icLogout from "../../assets/image/ic-logout.png";
 import Thumbnail from "../../assets/image/thumbnail.png";
 import Cart from "../../assets/image/cart.png";
+import bill from "../../assets/image/bill.png"
 
 function Header() {
   const profilPict = <img src={Thumbnail} alt="122" style={{ width: 60 }} />;
@@ -24,9 +25,13 @@ function Header() {
     navigate("/home");
   };
 
-  const orderNav = () => {
-    navigate("/infoOrder");
+  const history = () => {
+    navigate("/history");
   };
+
+  const profile = () => {
+    navigate("/profile")
+  }
 
   const logoutNav = () => {
     dispatch({
@@ -50,7 +55,7 @@ function Header() {
   }, [setCartNotif]);
 
   return (
-    <div style={{ boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.25)" }}>
+    <div style={{ boxShadow: "0px 5px 30px rgba(0, 0, 0, 0.1)" }}>
       <div className="container">
         <div className="d-flex justify-content-between py-2">
           <div
@@ -88,12 +93,16 @@ function Header() {
               </Link>
             </div>
             <NavDropdown id="nav-dropdown-dark-example" title={profilPict}>
-              <NavDropdown.Item onClick={orderNav}>
+              <NavDropdown.Item onClick={profile}>
                 <img src={icUser} alt="User" style={{ height: 30 }} />{" "}
                 <span style={{ fontWeight: 600 }}>Profile</span>
               </NavDropdown.Item>
+              <NavDropdown.Item onClick={history}>
+                <img src={bill} alt="transaction" style={{ height: 30 }} />{" "}
+                <span style={{ fontWeight: 600 }}>Transaction</span>
+              </NavDropdown.Item>
               <NavDropdown.Item onClick={logoutNav}>
-                <img src={icLogout} alt="User" style={{ height: 30 }} />{" "}
+                <img src={icLogout} alt="logout" style={{ height: 30 }} />{" "}
                 <span style={{ fontWeight: 600 }}>Logout</span>
               </NavDropdown.Item>
             </NavDropdown>
