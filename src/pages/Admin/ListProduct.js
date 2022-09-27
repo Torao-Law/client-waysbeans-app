@@ -108,7 +108,7 @@ function ListProduct() {
                   <th scope="row d-flex text-align-center">1</th>
                   <td className="m-0">
                     <img
-                      src={$item.image}
+                      src={item.image}
                       alt="imgproduct"
                       style={{ width: 80 }}
                     />
